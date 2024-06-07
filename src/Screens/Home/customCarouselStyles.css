@@ -1,0 +1,58 @@
+.my-custom-carousel .carousel .slide {
+    background: none; /* Ensures the slide background doesn't show an undesired color */
+}
+
+.my-custom-carousel .control-arrow {
+    opacity: 1 !important; /* Ensure arrows are always visible */
+    width: 50px; /* Adjust based on your preference */
+    height: 50px; /* Adjust based on your preference */
+    border-radius: 0px; /* Makes the arrow buttons circular, adjust for desired curvature */
+    cursor: pointer; /* Change cursor on hover */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background for better visibility */
+    border: none; /* Removes any default border */
+    outline: none; /* Removes the outline to avoid white box on click */
+    padding: 4px;
+}
+
+
+.my-custom-carousel .control-arrow.control-prev,
+.my-custom-carousel .control-arrow.control-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-custom-carousel .control-arrow::before {
+    font-size: 2vw; /* Adjust the size of the arrow icon */
+    color: black; /* Color of the arrow icon for better visibility */
+    /* Using Unicode arrows */
+}
+
+.my-custom-carousel .control-arrow.control-prev::before {
+    content: '\2BC7'; /* Left-pointing arrow */
+}
+
+.my-custom-carousel .control-arrow.control-next::before {
+    content: '\2BC8'; 
+}
+
+.my-custom-carousel .control-arrow.control-prev, 
+.my-custom-carousel .control-arrow.control-next {
+    top: 50% !important;
+    transform: translateY(-50%); 
+}
+
+.my-custom-carousel .carousel .control-arrow:focus {
+    outline: none;
+}
+.my-custom-carousel .control-arrow::after,
+.my-custom-carousel .control-arrow::before {
+    background: none !important;
+    border: none !important;
+   
+}
+.whitec .control-arrow::before {
+    font-size: 2vw; /* Adjust the size of the arrow icon */
+    color: white; /* Color of the arrow icon for better visibility */
+    /* Using Unicode arrows */
+}
